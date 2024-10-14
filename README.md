@@ -40,3 +40,11 @@ Enter this code and Ctrl + S to save and Ctrl + X to exit
     RestartSec=10s
     [Install]
     WantedBy=multi-user.target
+
+
+Now lets start and enable the node_exporter service using below commands
+
+    sudo systemctl daemon-reload
+    sudo systemctl start node_exporter
+    sudo systemctl enable node_exporter
+    sudo systemctl status node_exporter
